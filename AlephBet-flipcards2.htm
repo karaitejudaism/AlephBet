@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<HTML LANG="EN">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=UTF-8">
+
+<TITLE>Learn the Aleph Bet</TITLE>
+<META NAME="description" content="A simple way to become familiar with the Hebrew alephbet.">
+<META NAME="keywords" content="Torah, Karaite, Jewish, calendar, hebrew, Jewish holidays, weekly readings, parashat, parashot, aleph, bet, alephbet">
+<STYLE type="text/css">
+    body {background-color: #FFFFFF;}
+    h1 {
+        text-align:center;
+        }
+    h2 {
+        text-align:center;
+        }
+    h3 {
+        text-align:center;
+        }
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.flip-card {
+  border-style: hidden;
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+}
+
+/*regular letter flip-cards*/
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #222e36ef;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*sofit flip-cards*/
+.flip-card-front-sofit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: lightgreen;
+}
+
+.flip-card-back-sofit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: seagreen;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/*audio section*/
+.button {
+   border: 1px solid #0a3c59;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   padding: 4px 10px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #06426c;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #3e779d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#3e779d));
+   background: -webkit-linear-gradient(top, #65a9d7, #3e779d);
+   background: -moz-linear-gradient(top, #65a9d7, #3e779d);
+   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
+   background: -o-linear-gradient(top, #65a9d7, #3e779d);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#3e779d));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+}
+
+/*end audio section*/
+
+</style>
+
+
+
+
+
+
+
+</HEAD>
+<BODY>
+
+<h1>Learn the Aleph Bet</h1>
+<h2>REMEMBER: Hebrew is read right-to-left!</h2>
+<h3>Hear the simplified Aleph-Bet sung like the English ABC song in 15 seconds           <!-- audio element -->
+            <a onclick="this.firstChild.play()" class="button"><audio src="sounds/Alephbet-in-old-ABC-song.wav"></audio>&#9658;</a>
+            <!-- end of audio element --></h3>
+
+
+<section id="letters">
+  <div class="container">
+    <div class="grid">
+
+
+      <!-- #dalet -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1491;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>DALET</h5>
+            <h5>"D" like "dairy"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/04-dalet.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #gimel -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1490;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>GIMEL</h5>
+            <h5>"G" like "game"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/03-gimel.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #betvet -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p></p><span style='font-size:70px;'>&#1489;&#1468;  &#1489;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>With dagesh: BET<h5>
+            <h5>Without: VET<h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/02-betvet.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #aleph -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1488;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>ALEPH</h5>
+            <h5>Silent letter</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/01-aleph.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #chet -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1495;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>CHET</h5>
+            <h5>"CH" in BACH</h5>
+            <!-- audio element -->
+            <a onclick="this.firstChild.play()" class="button"><audio src="sounds/08-chet.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #zayin -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1494;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>ZAYIN</h5>
+            <h5>"Z" like "zebra"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/07-zion.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #vav -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1493;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>VAV</h5>
+            <h5>"V" like "victor"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/06-vav.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #he -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1492;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>HE</h5>
+            <h5>"H" like "happy"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/05-heh.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #lamed -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1500;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>LAMED</h5>
+            <h5>"L" like "love"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/12-lamed.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #kafchaf -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p></p><span style='font-size:70px;'>&#1499;&#1468;  &#1499;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>With dagesh: KAF<h5>
+            <h5>Without: CHAF<h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/11-kafchaf.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #yud -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1497;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>YUD</h5>
+            <h5>"Y" like "yes"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/10-yud.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #tet -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1496;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>TET</h5>
+            <h5>"T" like "tape"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/09-tet.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #ayin -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1506;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>AYIN</h5>
+            <h5>Silent / Gutteral</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/16-ayin.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #samach -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1505;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>SAMACH</h5>
+            <h5>"S" like "snap"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/15-samech.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #nun -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1504;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>NUN</h5>
+            <h5>"N" like "never"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/14-nun.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #mem -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1502;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>MEM</h5>
+            <h5>"M" like "marry"<h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/13-mem.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #resh -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1512;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>RESH</h5>
+            <h5>"R" like "real"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/20-resh.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #quf -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:80px;'>&#1511;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>QUF</h5>
+            <h5>"K" like "king"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/19-quf.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #tsade -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:100px;'>&#1510;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>TSADE</h5>
+            <h5>"TS" like "lots"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/18-tsadie.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #pefe -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p></p><span style='font-size:70px;'>&#1508;&#1468;  &#1508;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>With dagesh: PE<h5>
+            <h5>Without: FE<h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/17-pefe.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #finalmem -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front-sofit">
+            <span style='font-size:80px;'>&#1501;</span>
+          </div>
+          <div class="flip-card-back-sofit">
+            <h5>FINAL MEM</h5>
+            <h5>MEM SOFIT</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/24-mem-sofit.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #finalkhaf -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front-sofit">
+            <span style='font-size:80px;'>&#1498;</span>
+          </div>
+          <div class="flip-card-back-sofit">
+            <h5>FINAL CHAF</h5>
+            <h5>CHAF SOFIT</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/23-chaf-sofit.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #tav -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span style='font-size:80px;'>&#1514;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>TAV</h5>
+            <h5>"T" like "take"</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/22-tav.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #sinshin -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p></p><span style='font-size:60px;'>&#1513;&#1473;  &#1513;&#1474;</span>
+          </div>
+          <div class="flip-card-back">
+            <h5>Dot right: SHIN<h5>
+            <h6>Dot left: SIN "a sin is never right"<h6>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/21-shinsin.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #alldone -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h1>All Done!</p>
+          </div>
+          <div class="flip-card-back">
+            <br />
+            <h6>That was easy!</h6>
+            <h6>It just takes practice!</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- #finaltsade -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front-sofit">
+            <span style='font-size:80px;'>&#1509;</span>
+          </div>
+          <div class="flip-card-back-sofit">
+            <h5>FINAL TSADE</h5>
+            <h5>TSADE SOFIT</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/27-tsadie-sofit.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #finalfe -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front-sofit">
+            <span style='font-size:80px;'>&#1507;</span>
+          </div>
+          <div class="flip-card-back-sofit">
+            <h5>FINAL FE</h5>
+            <h5>FE SOFIT</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/26-fe-sofit.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+      <!-- #finalnun -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front-sofit">
+            <span style='font-size:80px;'>&#1503;</span>
+          </div>
+          <div class="flip-card-back-sofit">
+            <h5>FINAL NUN</h5>
+            <h5>NUN SOFIT</h5>
+            <!-- audio element -->
+            <p></p><a onclick="this.firstChild.play()" class="button"><audio src="sounds/25-nun-sofit.mp3"></audio>&#9658;</a>
+            <!-- end of audio element -->
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<P> </P>
+<TABLE BORDER="2" WIDTH="100%">
+<TR>
+<TH BGCOLOR="BEIGE">
+
+
+      <h2>You will see the dagesh (dot in the middle) in other letters.</h2>
+      <h2>That's just for added emphasis.</h2>
+
+
+      <h2>It only changes the sound of the letters in this chart.</h2>
+
+
+    </TH>
+
+    <TH BGCOLOR="LIGHTGREEN">
+
+      <h2>The Final Forms are used when that letter falls at the end of a word.</h2>
+
+      <h2>Final Form letters are also called "sofit" letters.</h2>
+
+      <h2>Such as "mem sofit", "nun sofit"...</h2>
+
+    </TH>
+    </TR>
+
+
+
+
+<P> </P>
+
+<P> </P>
+
+
+</BODY>
+</HTML>
